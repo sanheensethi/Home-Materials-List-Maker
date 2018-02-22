@@ -1,0 +1,87 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html;" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="assests/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assests/css/font-awesome.css">
+	<link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+	<div class="jumbotron bg-danger">
+		<h1 style="color:#fff;" class="text-center">Initialize Data</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-lg-12 col-sm-12">
+				<div class="form-group">
+					<div class="input-group">
+  							<span class="input-group-addon"><i class="fa fa-home"></i></span>
+  							<input id="companyname" type="text" class="form-control" name="companyname" placeholder="Company Name / Type Home" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+				  		<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				  		<input id="username" type="text" class="form-control" name="username" placeholder="Your Name" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+				  		<span class="input-group-addon"><i class="fa fa-gear"></i></span>
+				  		<input id="dbserver" type="text" class="form-control" name="dbserver" placeholder="Database Server" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+				  		<span class="input-group-addon"><i class="fa fa-database"></i></span>
+				  		<input id="dbname" type="text" class="form-control" name="dbname" placeholder="Database Name" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+				  		<span class="input-group-addon"><i class="fa fa-key"></i></span>
+				  		<input id="dbuser" type="text" class="form-control" name="dbuser" placeholder="Databse User" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+				  		<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+				  		<input id="dbpass" type="text" class="form-control" name="dbpass" placeholder="Database Password" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+				  		<input id="submit" type="submit" class="btn btn-success" name="submit" value="Init" required>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="show"></div>
+	</div>
+<script type="text/javascript" src="assests/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assests/js/tether/tether.js"></script>
+<script type="text/javascript" src="assests/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#submit').click(function(){
+			var company  = $('#companyname').val();
+			var user     = $('#username').val();
+			var server     = $('#dbserver').val();
+			var dbuser     = $('#dbuser').val();
+			var dbname     = $('#dbname').val();
+			var dbpass     = $('#dbpass').val();
+			$.ajax({
+				url:'initialize.php',
+				type:'POST',
+				data:{'company':company,'user':user,'server':server,'dbuser':dbuser,'dbname':dbname,'dbpass':dbpass},
+				success:function(data){
+					$('#show').html(data);
+				}
+			});
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "home-salmon-list-maker",
+  "version": "1.0.0",
+  "description": "This is The Software in PHP used to make List for Home Made Salmons. Helps for Stores , Individual Pearsons etc. Refine Data as Categories and Put also your products in categories if it is not present. In list making page all is showen in front of you you just need to tap on toggle and put quantity needed and then submit then download option will come , Output is Excel File",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanheensethi/Home-Salmon-List-Maker.git"
+  },
+  "keywords": [
+    "Home",
+    "Salmon",
+    "list",
+    "Maker",
+    "PHP",
+    "PhpSoftware"
+  ],
+  "author": "Sanheen Sethi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanheensethi/Home-Salmon-List-Maker/issues"
+  },
+  "homepage": "https://github.com/sanheensethi/Home-Salmon-List-Maker#readme"
+}
