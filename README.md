@@ -54,7 +54,14 @@
  	> Download Option will come just after submit the data.
  	
  	> Requires a Excel file opener , In android WPS Offie is best.
- 	 	  
+ 	
+ 	> To use just download any php , databade server and then place that software in your specified directory
+ 	  where php files will run. Then Initialize it and Use it. 
+ 	  for Android i prefer [Bit Web Server](https://drive.google.com/file/d/1Ir-2tO00w0O61SOOovPIwQh74C6FGquB/view?usp=drivesdk) 
+ 	  Place your software in www folder then use it simply. You need to Make sure that Both will on Php server and Database Server.
+ 	  if all is ok. Then use it in your Local Machine Simply.
+ 	  
+ 	  
  	[Facebook](https://www.facebook.com/sanheen.sethi376)
  	[Github](https://www.github.com/sanheensethi)
  	[Linkedin](https://www.linkedin.com/in/sanheen-sethi-1114a7157)
